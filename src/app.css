@@ -1,0 +1,19 @@
+body{
+    /* background-color: hsl(217, 54%, 11%); */
+    flex-wrap: wrap;
+}
+/* .App{
+    display: flex;
+    width: 100%;
+} */
+
+@media screen and (max-width: 720px){
+    .css-1txuqll{
+        display: inline-block;
+        width: 145%;
+        
+    }
+}
+    
+
+    
