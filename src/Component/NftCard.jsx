@@ -32,8 +32,20 @@ const NftCard = () => {
       <header className="head">Gaming spotlight</header>
       <div className="NFTCard">
         <div className={Style.NFTCard}>
-          {/* {featuredArray.map((el, i) => ( */}
           {NFTGameing.cardData.map((data, i) => (
+                <div
+                className=""
+                  onClick={() =>
+                    getData(
+                      data.imgScr,
+                      data.title,
+                      data.desc,
+                      data.Chain,
+                      data.page,
+                      data.Created
+                    )
+                  }
+                >
             <div className={Style.NFTCard_box} key={i}>
               <div className={Style.NFTCard_box_img}>
                 <div key={i}>
@@ -51,13 +63,9 @@ const NftCard = () => {
                       className={Style.NFTCard_box_update_like}
                       onClick={() => likenfts()}
                     >
-                      {like ? (
-                        <AiOutlineHeart />
-                      ) : (
-                        <AiFillHeart
-                          className={Style.NFTCard_box_update_like_icon}
-                        />
-                      )}
+                      <AiFillHeart
+                        className={Style.NFTCard_box_update_like_icon}
+                      />
                       {""}22
                     </div>
                   </div>
@@ -79,14 +87,10 @@ const NftCard = () => {
                       </h4>
                       <div
                         className={
-                          Style.NFTCard_box_update_details_Price_box_box
-                        }
-                      >
+                          Style.NFTCard_box_update_details_Price_box_box}>
                         <div
                           className={
-                            Style.NFTCard_box_update_details_Price_box_bid
-                          }
-                        >
+                            Style.NFTCard_box_update_details_Price_box_bid}>
                           <small>Current Bid</small>
                           <p>{data.Bib}</p>
                         </div>
@@ -115,6 +119,7 @@ const NftCard = () => {
                 </div>
               </div>
             </div>
+            </div>
           ))}
         </div>
       </div>
@@ -132,7 +137,7 @@ const NftCard = () => {
         ""
       )}
 
-      <Nft3DCard/>
+      <Nft3DCard />
     </>
   );
 };

@@ -17,7 +17,7 @@ const Modal = ({ img, title, desc, Chain, page, Created, hide }) => {
             <button type="button" className="btn-close" onClick={hide}></button>
           </div>
           <div className="modal-body">
-            <img src={img} className="img-fluid" />
+            <img src={img} className="img-fluid" alt="" /> 
             <p>{desc}</p>
           </div>
           <div className="modal-footer">

@@ -156,6 +156,8 @@ header {
   margin: 1.5rem;
   font-size: 1.5rem;
 }
+.border{
+}
 @media screen and (max-device-width: 1024px) and (min-device-width: 775px) {
   .NFTCard {
     grid-template-columns: repeat(3, 1fr);
